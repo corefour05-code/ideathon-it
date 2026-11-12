@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Ideathon 2026 — 1st Year Edition | PSNA College of Engineering and Technology</title>
+  <meta
+    name="description"
+    content="Official details and team registration portal for the 1st Year IT Ideathon organized by the Department of Information Technology, PSNA College of Engineering and Technology."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css?v=3" />
+</head>
+<body>
+  <!-- Institutional Top Strip -->
+  <div class="top-strip">
+    <div class="container top-strip-inner">
+      <span>PSNA College of Engineering and Technology</span>
+      <span class="strip-sep" aria-hidden="true">|</span>
+      <span>Department of Information Technology</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="PSNACET IT Ideathon Home">
+        <span class="brand-mark">IT</span>
+        <span class="brand-text">
+          <strong>IT Ideathon ’26</strong>
+          <small>1st Year Innovation Challenge</small>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="navMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navMenu">
+        <a href="#about">Overview</a>
+        <a href="#themes">Themes</a>
+        <a href="#guidelines">Guidelines</a>
+        <a href="#timeline">Schedule</a>
+        <a href="#faq">FAQ</a>
+        <a href="#register" class="btn btn-sm btn-primary">Register Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">1st Year IT Department &bull; PSNACET</p>
+          <h1>From Campus Problem Statements to Practical Tech Concepts</h1>
+          <p class="hero-subtitle">
+            Hosted by the <strong>Department of Information Technology</strong>,
+            <strong>PSNA College of Engineering and Technology</strong>. Exclusively for
+            <strong>1st Year IT Department students</strong> — form a team of 2 to 4 members
+            and pitch structured solutions across Mobile, Web, AI/ML, and emerging domains.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#register" class="btn btn-primary btn-lg">
+              Register Your Team
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#themes" class="btn btn-outline btn-lg">View Themes</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-value">2 – 4</span>
+              <span class="metric-label">Members / Team</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">8 Tracks</span>
+              <span class="metric-label">Domain Themes</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">Nov 21, 2026</span>
+              <span class="metric-label">Event Date</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="snapshot-card" aria-label="Event Summary">
+          <div class="snapshot-header">
+            <h2>Event Summary</h2>
+            <span class="status-pill">Open for 1st Year</span>
+          </div>
+          <dl class="snapshot-list">
+            <div>
+              <dt>Institution</dt>
+              <dd>PSNA College of Engineering and Technology</dd>
+            </div>
+            <div>
+              <dt>Organizing Department</dt>
+              <dd>Department of Information Technology</dd>
+            </div>
+            <div>
+              <dt>Eligibility</dt>
+              <dd>1st Year IT Department Students (PSNACET)</dd>
+            </div>
+            <div>
+              <dt>Team Size</dt>
+              <dd>Minimum 2, Maximum 4 Members (incl. Team Lead)</dd>
+            </div>
+            <div>
+              <dt>Event Date</dt>
+              <dd id="cfgDate">November 21, 2026</dd>
+            </div>
+            <div>
+              <dt>Venue</dt>
+              <dd id="cfgVenue">Will intimate later</dd>
+            </div>
+          </dl>
+          <div class="snapshot-footer">
+            <a href="#register" class="btn btn-outline btn-full">Proceed to Registration</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-surface" id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Overview</span>
+          <h2>Built for First-Year IT Innovators</h2>
+          <p>
+            An accessible platform for 1st Year IT Department students to practice structured
+            problem solving, teamwork, and technical presentation without needing prior hackathon experience.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <span class="feature-num">01</span>
+            <h3>Concept &amp; Clarity First</h3>
+            <p>
+              Focus on defining a real problem, designing a workable user flow, and presenting
+              the technical approach clearly. Working code is optional.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-num">02</span>
+            <h3>Collaborative Squads (2–4)</h3>
+            <p>
+              Partner with 1 to 3 peers across first-year sections. Divide responsibilities
+              across ideation, UI wireframing, architecture, and pitching.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-num">03</span>
+            <h3>Jury &amp; Faculty Mentorship</h3>
+            <p>
+              Present before IT Department faculty reviewers, gain constructive technical feedback,
+              and prepare for national-level hackathons.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Themes Section -->
+    <section class="section" id="themes">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Competition Tracks</span>
+          <h2>Ideathon Themes</h2>
+          <p>
+            Select a track that best aligns with your solution. Click any card below to
+            pre-select that theme in the registration form.
+          </p>
+        </div>
+
+        <div class="themes-grid">
+          <button type="button" class="theme-card" data-theme="Mobile App Development">
+            <div class="theme-top">
+              <span class="theme-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              </span>
+              <span class="theme-code">TRACK 01</span>
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>
+              Android, iOS, or cross-platform apps addressing campus utilities, student
+              productivity, accessibility, or everyday community needs.
+            </p>
+            <span class="theme-action">Select Track &rarr;</span>
+          </button>
+
+          <button type="button" class="theme-card" data-theme="Web App Development">
+            <div class="theme-top">
+              <span class="theme-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </span>
+              <span class="theme-code">TRACK 02</span>
+            </div>
+            <h3>Web App Development</h3>
+            <p>
+              Responsive portals, workflow dashboards, peer-collaboration tools, and modern
+              web platforms designed for real users.
+            </p>
+            <span class="theme-action">Select Track &rarr;</span>
+          </button>
+
+          <button type="button" class="theme-card" data-theme="AI & Machine Learning (AI/ML)">
+            <div class="theme-top">
+              <span class="theme-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+              </span>
+              <span class="theme-code">TRACK 03</span>
+            </div>
+            <h3>AI &amp; Machine Learning</h3>
+            <p>
+              Intelligent assistants, computer vision, predictive analytics, and applied
+              generative AI workflows for practical automation.
+            </p>
+            <span class="theme-action">Select Track &rarr;</span>
+          </button>
+
+          <button type="button" class="theme-card" data-theme="IoT & Smart Campus">
+            <div class="theme-top">
+              <span class="theme-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+              </span>
+              <span class="theme-code">TRACK 04</span>
+            </div>
+            <h3>IoT &amp; Smart Campus</h3>
+            <p>
+              Connected sensor systems, automated energy conservation, smart classroom tools,
+              and campus logistics monitoring.
+            </p>
+            <span class="theme-action">Select Track &rarr;</span>
+          </button>
+
+          <button type="button" class="theme-card" data-theme="Cybersecurity & Digital Safety">
+            <div class="theme-top">
+              <span class="theme-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </span>
+              <span class="theme-code">TRACK 05</span>
+            </div>
+            <h3>Cybersecurity &amp; Safety</h3>
+            <p>
+              Phishing detection, privacy protection, safe authentication systems, and digital
+              hygiene tools for students and institutions.
+            </p>
+            <span class="theme-action">Select Track &rarr;</span>
+          </button>
+
+          <button type="button" class="theme-card" data-theme="EdTech & FinTech">
+            <div class="theme-top">
+              <span class="theme-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </span>
+              <span class="theme-code">TRACK 06</span>
+            </div>
+            <h3>EdTech &amp; FinTech</h3>
+            <p>
+              Adaptive study planners, interactive skill-assessment tools, student budgeting,
+              and accessible financial literacy applications.
+            </p>
+            <span class="theme-action">Select Track &rarr;</span>
+          </button>
+
+          <button type="button" class="theme-card" data-theme="Healthcare & MedTech">
+            <div class="theme-top">
+              <span class="theme-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </span>
+              <span class="theme-code">TRACK 07</span>
+            </div>
+            <h3>Healthcare &amp; Wellness</h3>
+            <p>
+              Preventive health tracking, mental wellness support, emergency response aides,
+              and assistive technology for differently-abled users.
+            </p>
+            <span class="theme-action">Select Track &rarr;</span>
+          </button>
+
+          <button type="button" class="theme-card" data-theme="Sustainability & Open Innovation">
+            <div class="theme-top">
+              <span class="theme-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+              </span>
+              <span class="theme-code">TRACK 08</span>
+            </div>
+            <h3>Sustainability &amp; Open Track</h3>
+            <p>
+              Waste reduction, water/energy optimization, or any creative cross-disciplinary
+              idea addressing a verified societal challenge.
+            </p>
+            <span class="theme-action">Select Track &rarr;</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rules & Guidelines -->
+    <section class="section section-surface" id="guidelines">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Guidelines &amp; Evaluation</span>
+          <h2>Rules &amp; Judging Rubric</h2>
+          <p>Review team formation limits and evaluation weightage prior to registration.</p>
+        </div>
+
+        <div class="rules-layout">
+          <div class="panel-card">
+            <h3>Participation Guidelines</h3>
+            <ul class="rules-list">
+              <li>
+                <strong>1st Year IT Exclusive:</strong> Open strictly to 1st Year students of
+                the Department of Information Technology, PSNA College of Engineering and Technology.
+              </li>
+              <li>
+                <strong>Team Size (Min 2, Max 4):</strong> Each team must have between
+                <strong>2 and 4 members</strong> (1 Team Lead + 1 to 3 Team Members). Solo entries
+                are not permitted.
+              </li>
+              <li>
+                <strong>Complete Member Records:</strong> Provide Team Name, Theme, and each
+                member’s Full Name, Section, and Register Number.
+              </li>
+              <li>
+                <strong>Unique Membership:</strong> A student may register in only one team,
+                verified via Register Number.
+              </li>
+              <li>
+                <strong>Original Work:</strong> All problem statements, designs, and pitch decks
+                must be prepared originally by the participating team.
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel-card">
+            <h3>Evaluation Weightage</h3>
+            <div class="criteria-list">
+              <div class="criteria-item">
+                <div class="criteria-head">
+                  <span>Problem Relevance &amp; Clarity</span>
+                  <span class="weight-tag">25%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 25%"></span></div>
+              </div>
+              <div class="criteria-item">
+                <div class="criteria-head">
+                  <span>Innovation &amp; Originality</span>
+                  <span class="weight-tag">30%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 30%"></span></div>
+              </div>
+              <div class="criteria-item">
+                <div class="criteria-head">
+                  <span>Technical Feasibility</span>
+                  <span class="weight-tag">25%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 25%"></span></div>
+              </div>
+              <div class="criteria-item">
+                <div class="criteria-head">
+                  <span>Presentation &amp; Q&amp;A</span>
+                  <span class="weight-tag">20%</span>
+                </div>
+                <div class="progress-bar"><span style="width: 20%"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Schedule</span>
+          <h2>Event Milestones</h2>
+          <p>Key stages from team sign-up to final pitch evaluation.</p>
+        </div>
+
+        <div class="timeline-grid">
+          <div class="timeline-step">
+            <span class="step-badge">Stage 01</span>
+            <h3>Team Registration</h3>
+            <p>Form a 2–4 member team, choose a theme, and submit all member details.</p>
+            <span class="step-meta" id="cfgRegDeadline">Deadline: To Be Announced</span>
+          </div>
+          <div class="timeline-step">
+            <span class="step-badge">Stage 02</span>
+            <h3>Pitch Preparation</h3>
+            <p>Structure the problem, proposed workflow, and prepare a concise 5–7 slide deck.</p>
+            <span class="step-meta">Presentation Deck</span>
+          </div>
+          <div class="timeline-step">
+            <span class="step-badge">Stage 03</span>
+            <h3>Ideathon Pitch Day</h3>
+            <p>Present your concept to the IT Department evaluation panel and answer Q&amp;A.</p>
+            <span class="step-meta" id="cfgPitchDate">Date: November 21, 2026</span>
+          </div>
+          <div class="timeline-step">
+            <span class="step-badge">Stage 04</span>
+            <h3>Awards &amp; Certificates</h3>
+            <p>Top teams receive recognition, certificates, and guidance for further building.</p>
+            <span class="step-meta">Valedictory Session</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="section section-surface" id="register">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Registration</span>
+          <h2>Register Your Team</h2>
+          <p>
+            Submit your team details below (minimum 2, maximum 4 members including the Team Lead).
+          </p>
+        </div>
+
+        <div class="reg-wrapper">
+          <form id="ideathonForm" novalidate>
+            <!-- Team Overview -->
+            <fieldset class="form-block">
+              <legend>1. Team &amp; Theme Information</legend>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="teamName">Team Name <span class="req">*</span></label>
+                  <input
+                    type="text"
+                    id="teamName"
+                    name="teamName"
+                    required
+                    maxlength="60"
+                  />
+                </div>
+
+                <div class="field">
+                  <label for="themeSelect">Ideathon Theme <span class="req">*</span></label>
+                  <select id="themeSelect" name="theme" required>
+                    <option value="">-- Select --</option>
+                    <option value="Mobile App Development">Mobile App Development</option>
+                    <option value="Web App Development">Web App Development</option>
+                    <option value="AI & Machine Learning (AI/ML)">AI &amp; Machine Learning (AI/ML)</option>
+                    <option value="IoT & Smart Campus">IoT &amp; Smart Campus</option>
+                    <option value="Cybersecurity & Digital Safety">Cybersecurity &amp; Digital Safety</option>
+                    <option value="EdTech & FinTech">EdTech &amp; FinTech</option>
+                    <option value="Healthcare & MedTech">Healthcare &amp; MedTech</option>
+                    <option value="Sustainability & Open Innovation">Sustainability &amp; Open Innovation</option>
+                  </select>
+                </div>
+
+                <div class="field field-full">
+                  <label for="ideaTitle">Idea Title <span class="opt">(Optional)</span></label>
+                  <input
+                    type="text"
+                    id="ideaTitle"
+                    name="ideaTitle"
+                    maxlength="120"
+                  />
+                </div>
+
+                <div class="field field-full">
+                  <label>Total Team Size (Min 2, Max 4 Members incl. Team Lead) <span class="req">*</span></label>
+                  <div class="size-selector" role="group" aria-label="Select team size">
+                    <button type="button" class="size-btn" data-size="2">2 Members (Min)</button>
+                    <button type="button" class="size-btn" data-size="3">3 Members</button>
+                    <button type="button" class="size-btn active" data-size="4">4 Members (Max)</button>
+                  </div>
+                  <input type="hidden" id="teamSize" name="teamSize" value="4" />
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Team Lead Details -->
+            <fieldset class="form-block">
+              <legend>2. Team Lead Details (Member 1)</legend>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="leadName">Team Lead Full Name <span class="req">*</span></label>
+                  <input
+                    type="text"
+                    id="leadName"
+                    name="leadName"
+                    required
+                  />
+                </div>
+
+                <div class="field">
+                  <label for="leadRegNo">Register Number <span class="req">*</span></label>
+                  <input
+                    type="text"
+                    id="leadRegNo"
+                    name="leadRegNo"
+                    required
+                  />
+                </div>
+
+                <div class="field">
+                  <label for="leadSection">Section <span class="req">*</span></label>
+                  <select id="leadSection" name="leadSection" required>
+                    <option value="">-- Select --</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="leadPhone">Mobile / WhatsApp Number <span class="req">*</span></label>
+                  <input
+                    type="tel"
+                    id="leadPhone"
+                    name="leadPhone"
+                    required
+                    pattern="[0-9+\-\s]{10,15}"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Dynamic Team Members Container (Members 2 to 4) -->
+            <div id="membersContainer"></div>
+
+            <div class="form-error" id="formError" role="alert" hidden></div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">
+                Submit Registration
+              </button>
+              <button type="reset" class="btn btn-outline btn-lg" id="resetBtn">
+                Reset Form
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">FAQ</span>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Who is eligible to participate in this Ideathon?</summary>
+            <p>
+              This edition is exclusively for <strong>1st Year IT Department students</strong> at
+              PSNA College of Engineering and Technology.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>What is the required team size?</summary>
+            <p>
+              Every team must have a <strong>minimum of 2 members</strong> and a
+              <strong>maximum of 4 members</strong> (1 Team Lead + 1 to 3 Team Members).
+              Solo participation is not permitted.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Can team members be from different sections?</summary>
+            <p>
+              Yes. Each member enters their individual Section and Register Number during
+              registration, so 1st Year IT students across sections A&ndash;D can form a team.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Do we need a finished working prototype?</summary>
+            <p>
+              No. An ideathon evaluates your problem clarity, solution architecture, feasibility,
+              and pitch presentation. Wireframes or prototypes are welcome as an extra plus.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Department of Information Technology</strong>
+        <p>PSNA College of Engineering and Technology &mdash; 1st Year IT Ideathon 2026</p>
+      </div>
+      <div class="footer-links">
+        <a href="#themes">Themes</a>
+        <a href="#guidelines">Guidelines</a>
+        <a href="#register">Register</a>
+        <a href="#top">Back to Top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Confirmation Modal -->
+  <div class="modal-backdrop" id="successModal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-badge" id="modalBadge">Submission Recorded</div>
+      <h3 id="modalTitle">Team Registration Summary</h3>
+      <p id="modalSubtitle"></p>
+      <pre class="summary-box" id="summaryOutput"></pre>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-outline" id="copySummaryBtn">Copy Details</button>
+        <button type="button" class="btn btn-primary" id="closeModalBtn">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js?v=3"></script>
+  <script src="script.js?v=3"></script>
+</body>
+</html>
