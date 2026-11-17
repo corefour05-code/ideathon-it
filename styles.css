@@ -694,6 +694,170 @@ body {
   border-top: 1px solid var(--border);
 }
 
+.step-meta-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.6rem;
+  margin-top: 0.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.step-meta-box .step-meta {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.step-download-link {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.step-download-link:hover {
+  text-decoration: underline;
+  color: var(--accent-hover);
+}
+
+.download-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.download-link:hover {
+  text-decoration: underline;
+  color: var(--accent-hover);
+}
+
+/* Template Section */
+.template-box {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 1.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  align-items: start;
+}
+
+.template-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-sm);
+  background: var(--accent-tint);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+}
+
+.template-info h3 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 0.55rem;
+  color: var(--text);
+}
+
+.template-info p {
+  color: var(--text-secondary);
+  font-size: 0.94rem;
+  line-height: 1.6;
+  margin: 0 0 1.25rem;
+}
+
+.slide-flow-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.slide-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.6rem 0.85rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.slide-num {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-tint);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  border: 1px solid var(--accent-border);
+}
+
+.slide-title {
+  font-size: 0.87rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.template-download-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 1.6rem 1.4rem;
+  text-align: center;
+}
+
+.file-icon-wrap {
+  display: inline-grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 12px;
+  background: var(--accent-tint);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  margin-bottom: 0.85rem;
+}
+
+.template-download-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  margin: 0 0 0.35rem;
+  color: var(--text);
+}
+
+.file-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1.15rem;
+}
+
+.download-btn {
+  margin-bottom: 0.65rem;
+}
+
+.template-hint {
+  font-size: 0.77rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
 /* Registration */
 .reg-wrapper {
   background: var(--surface);
@@ -1076,7 +1240,8 @@ body {
 /* Responsive */
 @media (max-width: 980px) {
   .hero-grid,
-  .rules-layout {
+  .rules-layout,
+  .template-box {
     grid-template-columns: 1fr;
   }
 
@@ -1117,7 +1282,8 @@ body {
   .form-grid,
   .form-grid-3,
   .size-selector,
-  .hero-metrics {
+  .hero-metrics,
+  .slide-flow-grid {
     grid-template-columns: 1fr;
   }
 
