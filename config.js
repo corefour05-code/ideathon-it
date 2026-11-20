@@ -9,9 +9,12 @@ const IDEATHON_CONFIG = {
   department: "Department of Information Technology",
   college: "PSNA College of Engineering and Technology",
 
-  // Event schedule placeholders (update with your confirmed dates & venue)
+  // Event status
+  registrationClosed: true,
+
+  // Event schedule
   schedule: {
-    registrationDeadline: "To Be Announced",
+    registrationDeadline: "Closed (Time Over)",
     ideathonDate: "November 21, 2026",
     venue: "Will intimate later",
   },

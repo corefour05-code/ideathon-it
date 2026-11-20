@@ -14,7 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=5" />
 </head>
 <body>
   <!-- Institutional Top Strip -->
@@ -56,7 +56,7 @@
         <a href="#timeline">Schedule</a>
         <a href="#template">PPT Template</a>
         <a href="#faq">FAQ</a>
-        <a href="#register" class="btn btn-sm btn-primary">Register Team</a>
+        <a href="#register" class="btn btn-sm btn-outline btn-closed-nav">Registration Closed</a>
       </nav>
     </div>
   </header>
@@ -76,14 +76,7 @@
           </p>
 
           <div class="hero-actions">
-            <a href="#register" class="btn btn-primary btn-lg">
-              Register Your Team
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </a>
-            <a href="Ideathon-Template.pptx" download="PSNACET_IT_Ideathon_Template.pptx" class="btn btn-outline btn-lg">
+            <a href="Ideathon-Template.pptx" download="PSNACET_IT_Ideathon_Template.pptx" class="btn btn-primary btn-lg">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <polyline points="7 10 12 15 17 10"></polyline>
@@ -91,7 +84,8 @@
               </svg>
               Download PPT Template
             </a>
-            <a href="#themes" class="btn btn-outline btn-lg">View Themes</a>
+            <a href="#timeline" class="btn btn-outline btn-lg">View Schedule</a>
+            <a href="#register" class="btn btn-closed btn-lg">Registration Closed</a>
           </div>
 
           <div class="hero-metrics">
@@ -113,7 +107,7 @@
         <aside class="snapshot-card" aria-label="Event Summary">
           <div class="snapshot-header">
             <h2>Event Summary</h2>
-            <span class="status-pill">Open for 1st Year</span>
+            <span class="status-pill status-pill-closed">Registration Closed</span>
           </div>
           <dl class="snapshot-list">
             <div>
@@ -127,6 +121,10 @@
             <div>
               <dt>Eligibility</dt>
               <dd>1st Year IT Department Students (PSNACET)</dd>
+            </div>
+            <div>
+              <dt>Registration</dt>
+              <dd class="text-closed">Closed (Time Over)</dd>
             </div>
             <div>
               <dt>Team Size</dt>
@@ -146,7 +144,7 @@
             </div>
           </dl>
           <div class="snapshot-footer">
-            <a href="#register" class="btn btn-outline btn-full">Proceed to Registration</a>
+            <a href="#template" class="btn btn-primary btn-full">Download Pitch Template</a>
           </div>
         </aside>
       </div>
@@ -417,7 +415,7 @@
             <span class="step-badge">Stage 01</span>
             <h3>Team Registration</h3>
             <p>Form a 2–4 member team, choose a theme, and submit all member details.</p>
-            <span class="step-meta" id="cfgRegDeadline">Deadline: To Be Announced</span>
+            <span class="step-meta text-closed" id="cfgRegDeadline">Registration: Closed (Time Over)</span>
           </div>
           <div class="timeline-step">
             <span class="step-badge">Stage 02</span>
@@ -521,130 +519,46 @@
     <section class="section section-surface" id="register">
       <div class="container">
         <div class="section-head">
-          <span class="section-tag">Registration</span>
-          <h2>Register Your Team</h2>
+          <span class="section-tag">Registration Status</span>
+          <h2>Registration Closed</h2>
           <p>
-            Submit your team details below (minimum 2, maximum 4 members including the Team Lead).
+            The registration window for the 1st Year IT Ideathon has officially closed (Time Over).
           </p>
         </div>
 
         <div class="reg-wrapper">
-          <form id="ideathonForm" novalidate>
-            <!-- Team Overview -->
-            <fieldset class="form-block">
-              <legend>1. Team &amp; Theme Information</legend>
-              <div class="form-grid">
-                <div class="field">
-                  <label for="teamName">Team Name <span class="req">*</span></label>
-                  <input
-                    type="text"
-                    id="teamName"
-                    name="teamName"
-                    required
-                    maxlength="60"
-                  />
-                </div>
-
-                <div class="field">
-                  <label for="themeSelect">Ideathon Theme <span class="req">*</span></label>
-                  <select id="themeSelect" name="theme" required>
-                    <option value="">-- Select --</option>
-                    <option value="Mobile App Development">Mobile App Development</option>
-                    <option value="Web App Development">Web App Development</option>
-                    <option value="AI & Machine Learning (AI/ML)">AI &amp; Machine Learning (AI/ML)</option>
-                    <option value="IoT & Smart Campus">IoT &amp; Smart Campus</option>
-                    <option value="Cybersecurity & Digital Safety">Cybersecurity &amp; Digital Safety</option>
-                    <option value="EdTech & FinTech">EdTech &amp; FinTech</option>
-                    <option value="Healthcare & MedTech">Healthcare &amp; MedTech</option>
-                    <option value="Sustainability & Open Innovation">Sustainability &amp; Open Innovation</option>
-                  </select>
-                </div>
-
-                <div class="field field-full">
-                  <label for="ideaTitle">Idea Title <span class="opt">(Optional)</span></label>
-                  <input
-                    type="text"
-                    id="ideaTitle"
-                    name="ideaTitle"
-                    maxlength="120"
-                  />
-                </div>
-
-                <div class="field field-full">
-                  <label>Total Team Size (Min 2, Max 4 Members incl. Team Lead) <span class="req">*</span></label>
-                  <div class="size-selector" role="group" aria-label="Select team size">
-                    <button type="button" class="size-btn" data-size="2">2 Members (Min)</button>
-                    <button type="button" class="size-btn" data-size="3">3 Members</button>
-                    <button type="button" class="size-btn active" data-size="4">4 Members (Max)</button>
-                  </div>
-                  <input type="hidden" id="teamSize" name="teamSize" value="4" />
-                </div>
-              </div>
-            </fieldset>
-
-            <!-- Team Lead Details -->
-            <fieldset class="form-block">
-              <legend>2. Team Lead Details (Member 1)</legend>
-              <div class="form-grid">
-                <div class="field">
-                  <label for="leadName">Team Lead Full Name <span class="req">*</span></label>
-                  <input
-                    type="text"
-                    id="leadName"
-                    name="leadName"
-                    required
-                  />
-                </div>
-
-                <div class="field">
-                  <label for="leadRegNo">Register Number <span class="req">*</span></label>
-                  <input
-                    type="text"
-                    id="leadRegNo"
-                    name="leadRegNo"
-                    required
-                  />
-                </div>
-
-                <div class="field">
-                  <label for="leadSection">Section <span class="req">*</span></label>
-                  <select id="leadSection" name="leadSection" required>
-                    <option value="">-- Select --</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                  </select>
-                </div>
-
-                <div class="field">
-                  <label for="leadPhone">Mobile / WhatsApp Number <span class="req">*</span></label>
-                  <input
-                    type="tel"
-                    id="leadPhone"
-                    name="leadPhone"
-                    required
-                    pattern="[0-9+\-\s]{10,15}"
-                  />
-                </div>
-              </div>
-            </fieldset>
-
-            <!-- Dynamic Team Members Container (Members 2 to 4) -->
-            <div id="membersContainer"></div>
-
-            <div class="form-error" id="formError" role="alert" hidden></div>
-
-            <div class="form-actions">
-              <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">
-                Submit Registration
-              </button>
-              <button type="reset" class="btn btn-outline btn-lg" id="resetBtn">
-                Reset Form
-              </button>
+          <div class="registration-closed-card">
+            <div class="closed-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
             </div>
-          </form>
+            <h3>Registration Has Closed</h3>
+            <p class="closed-lead">
+              The submission deadline for the 1st Year IT Ideathon has passed. No new team registrations are being accepted.
+            </p>
+            <div class="closed-info-grid">
+              <div class="closed-info-item">
+                <strong>Next Step for Registered Teams</strong>
+                <span>Finalize your presentation using the official IT Department 6-slide template.</span>
+              </div>
+              <div class="closed-info-item">
+                <strong>Event Date &amp; Pitch Day</strong>
+                <span>November 21, 2026 &bull; Venue: Will intimate later</span>
+              </div>
+            </div>
+            <div class="closed-actions">
+              <a href="Ideathon-Template.pptx" download="PSNACET_IT_Ideathon_Template.pptx" class="btn btn-primary btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download PPT Template (.pptx)
+              </a>
+              <a href="#timeline" class="btn btn-outline btn-lg">View Event Schedule</a>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
       </div>
     </section>
 
@@ -658,6 +572,12 @@
 
         <div class="faq-list">
           <details class="faq-item" open>
+            <summary>Can teams still register for the Ideathon?</summary>
+            <p>
+              No, registrations are now <strong>closed (time over)</strong>. The registration deadline has passed and no new submissions can be accepted. Registered teams should focus on preparing their presentations using the official 6-slide template.
+            </p>
+          </details>
+          <details class="faq-item">
             <summary>Who is eligible to participate in this Ideathon?</summary>
             <p>
               This edition is exclusively for <strong>1st Year IT Department students</strong> at
@@ -708,8 +628,9 @@
       <div class="footer-links">
         <a href="#themes">Themes</a>
         <a href="#template">PPT Template</a>
+        <a href="#timeline">Schedule</a>
         <a href="#guidelines">Guidelines</a>
-        <a href="#register">Register</a>
+        <a href="#register">Registration Status</a>
         <a href="#top">Back to Top &uarr;</a>
       </div>
     </div>
@@ -729,7 +650,7 @@
     </div>
   </div>
 
-  <script src="config.js?v=4"></script>
-  <script src="script.js?v=4"></script>
+  <script src="config.js?v=5"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>

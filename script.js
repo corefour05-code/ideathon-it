@@ -12,7 +12,9 @@
     if (cfgDate && cfg.schedule.ideathonDate) cfgDate.textContent = cfg.schedule.ideathonDate;
     if (cfgVenue && cfg.schedule.venue) cfgVenue.textContent = cfg.schedule.venue;
     if (cfgRegDeadline && cfg.schedule.registrationDeadline) {
-      cfgRegDeadline.textContent = `Deadline: ${cfg.schedule.registrationDeadline}`;
+      cfgRegDeadline.textContent = cfg.registrationClosed
+        ? cfg.schedule.registrationDeadline
+        : `Deadline: ${cfg.schedule.registrationDeadline}`;
     }
     if (cfgPitchDate && cfg.schedule.ideathonDate) {
       cfgPitchDate.textContent = `Date: ${cfg.schedule.ideathonDate}`;
